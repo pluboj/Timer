@@ -5,7 +5,8 @@
 }
 
 #container {
-    -fx-background: #35B55C;
+    /*-fx-background: #35B55C;*/
+    -fx-background: #1F81BD;
     -fx-pref-width: 500px;
     -fx-padding: 75px;
     -fx-spacing: 20px;
