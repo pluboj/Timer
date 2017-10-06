@@ -2,6 +2,8 @@ package com.pluboj.pomodoro.controllers;
 
 import com.pluboj.pomodoro.model.Attempt;
 import com.pluboj.pomodoro.model.AttemptKind;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.layout.VBox;
@@ -15,12 +17,37 @@ public class Home {
     private Label title;
 
     private Attempt mCurrentAttempt;
+    private StringProperty mTimerText;
+
+    public Home() {
+        mTimerText = new SimpleStringProperty();
+        setTimerText(0);
+    }
+
+    public String getTimerText() {
+        return mTimerText.get();
+    }
+
+    public StringProperty timerTextProperty() {
+        return mTimerText;
+    }
+
+    public void setTimerText(String timerText) {
+        mTimerText.set(timerText);
+    }
+
+    public void setTimerText(int remainingSeconds) {
+        int minutes = remainingSeconds / 60;
+        int seconds = remainingSeconds % 60;
+        setTimerText(String.format("%02d:%02d", minutes, seconds));
+    }
 
     private void prepareAttempt(AttemptKind kind) {
         clearAttemptStyles();
         mCurrentAttempt = new Attempt(kind, "");
         addAttemptStyle(kind);
         title.setText(kind.getDisplayName());
+        setTimerText(mCurrentAttempt.getRemainingSeconds());
     }
 
     private void clearAttemptStyles() {
