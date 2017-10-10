@@ -1,8 +1,7 @@
 package com.pluboj.pomodoro.model;
 
 public enum AttemptKind {
-    FOCUS(3, "Focus time"),
-    /*FOCUS(25 * 60, "Focus time"),*/
+    FOCUS(25 * 60, "Focus time"),
     BREAK(5 * 60, "Break time");
 
     private int mTotalSeconds;
