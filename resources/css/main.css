@@ -7,21 +7,21 @@
 #container {
     -fx-background: #35B55C;
     -fx-pref-width: 500px;
-    -fx-padding: 75px;
+    -fx-padding: 65px;
     -fx-spacing: 20px;
 }
 
 
 #title {
-    -fx-font-size: 31px;
+    -fx-font-size: 22px;
 }
 
 #time {
     -fx-content-display: center;
-    -fx-pref-width: 350px;
+    -fx-pref-width: 330px;
     -fx-background-color: #202428;
-    -fx-font-size: 72px;
-    -fx-line-height: 80px;
+    -fx-font-size: 62px;
+    -fx-line-height: 60px;
     -fx-border-radius: 8px;
     -fx-letter-spacing: 10px;
 }
@@ -40,7 +40,7 @@
   -fx-fill-width: true;
   -fx-cursor: pointer;
   -fx-padding: 10px 10px 10px 37px;
-  -fx-font-size: 20px;
+  -fx-font-size: 15px;
 
 }
 
@@ -49,7 +49,7 @@
 }
 
 .svg-container {
-    -fx-padding: 0 0 0 17px;
+    -fx-padding: 0 0 0 15px;
     -fx-alignment: center-left;
 }
 
@@ -103,5 +103,5 @@
 }
 
 #pomodoro {
-    -fx-fit-height: 34px;
+    -fx-fit-height: 30px;
 }

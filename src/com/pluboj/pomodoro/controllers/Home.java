@@ -55,7 +55,7 @@ public class Home {
         reset();
         mCurrentAttempt = new Attempt(kind, "");
         addAttemptStyle(kind);
-        title.setText(kind.getDisplayName());
+        /*title.setText(kind.getDisplayName());*/
         setTimerText(mCurrentAttempt.getRemainingSeconds());
         mTimeLine = new Timeline();
         mTimeLine.setCycleCount(kind.getTotalSeconds());
@@ -71,7 +71,7 @@ public class Home {
     }
 
     private void saveCurrentAttempt() {
-        mCurrentAttempt.setMessage(message.getText());
+        /*mCurrentAttempt.setMessage(message.getText());*/
         mCurrentAttempt.save();
     }
 

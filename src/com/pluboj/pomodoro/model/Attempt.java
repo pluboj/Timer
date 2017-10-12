@@ -38,8 +38,7 @@ public class Attempt {
     @Override
     public String toString() {
         return "Attempt{" +
-                "mMessage='" + mMessage + '\'' +
-                ", mRemainingSeconds=" + mRemainingSeconds +
+                " mRemainingSeconds=" + mRemainingSeconds +
                 ", mKind=" + mKind +
                 '}';
     }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
+<!--<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>-->
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.SVGPath?>
 <VBox stylesheets="/css/main.css"
@@ -11,7 +11,7 @@
       fx:controller="com.pluboj.pomodoro.controllers.Home"
       fx:id="container">
     <children>
-        <Label fx:id="title" text="Pomodoro"/>
+       <!-- <Label fx:id="title" text="Pomodoro"/>-->
 
         <Label fx:id="time" text="${controller.timerText}"/>
 
@@ -55,13 +55,13 @@
             </children>
         </HBox>
 
-        <TextArea fx:id="message" promptText="What are you doing?"/>
+        <!--<TextArea fx:id="message" promptText="What are you doing?"/>-->
 
-        <ImageView>
+       <!-- <ImageView>
             <image>
                 <Image url="/images/pomodoro.png"/>
             </image>
-        </ImageView>
+        </ImageView>-->
 
     </children>
 </VBox>
